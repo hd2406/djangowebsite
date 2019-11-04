@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+{% block content %}
+{% load staticfiles %}
+<br>
+<br>
+
+    <body>
+        <style>
+            body, html {
+            height: 100%;
+           }
+
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+           rgba(0, 0, 0, 0.5)),
+           url(../static/img/mycat.jpg);
+          height: 70%;
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .hero-text {
+          text-align: center;
+          font-family: "Arial Black", Gadget, sans-serif;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+
+
+     </style>
+
+        <div class="hero-image" style="width: 75%" center >
+          <div class="hero-text">
+            <h1>I am Haokun Dong</h1>
+            <p>And I'm a  an engineer interested in machine learning and data science.</p>
+          </div>
+        </div>
+
+{%endblock%}

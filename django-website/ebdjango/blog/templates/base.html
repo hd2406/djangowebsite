@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <title>Haokun</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <style>
+            body {
+            font-family:font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            background-color: #fdfdfd;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #f00000;
+            border-color: #dc281e;
+        }
+        .main-block {
+          padding: 90px 0; }
+          @media (max-width: 768px) {
+            .main-block {
+              padding: 45px 0; } }
+
+        .light-bg {
+          background: #a6a6a6; }
+
+        .dark-bg {
+          background: #252a33; }
+
+                footer {
+                  position: relative; }
+
+                .copyright {
+                  text-align: center; }
+                  .copyright p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: black;
+                    margin: 0; }
+                  .copyright ul {
+                    margin: 25px 0 0;
+                    padding: 0; }
+                    .copyright ul li {
+                      list-style: none;
+                      display: inline-block; }
+                      .copyright ul li a {
+                        color: #ccc;
+                        font-size: 22px;
+                        padding: 0 10px;
+                        opacity: 0.6;
+                        -webkit-transition: 0.3s;
+                        -o-transition: 0.3s;
+                        transition: 0.3s; }
+                        .copyright ul li a:hover {
+                          opacity: 1;
+                          text-decoration: none; }
+
+    </style>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dfe6e5;" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}" style="font-weight: bold;" >HAOKUN DONG</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item text-dark">
+                            <a class="nav-link text-dark font-weight-bold" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-dark" href="#">Project</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-dark" href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li class="nav-item text-dark">
+                            <a class="nav-link text-dark" href="https://github.com/hd2406"  target="_blank">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+        <!-- Footer -->
+
+  <footer class="main-block white-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <div class="border-top pt-5">
+                        <p>Copyright &copy; Haokun Dong </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+</html>
